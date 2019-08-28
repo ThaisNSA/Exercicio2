@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package Cinema;
 
 import java.net.URL;
@@ -16,10 +13,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.ToggleGroup;
 
-/**
- *
- * @author HeiThor
- */
+
 public class FilmeController implements Initializable {
     
     private Label label;
@@ -55,7 +49,7 @@ public class FilmeController implements Initializable {
     }    
 
     @FXML
-    private void Salvar(ActionEvent event) {
+     void Salvar(ActionEvent event) {
         String n = " ";
         String e = " ";
         if(checkAcao.isSelected()){
