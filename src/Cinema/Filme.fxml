@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinetop.LayoutController">
+   <children>
+      <Button layoutX="305.0" layoutY="470.0" mnemonicParsing="false" onAction="#PegarInformacoes" text="Salvar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="179.0" layoutY="26.0" text="Quais gêneros de filme você prefere ?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="153.0" text="Qual filme você gostaria de ver agora ?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="253.0" prefHeight="38.0" prefWidth="751.0" text="Qual sua opinião sobre os filmes apresentados na questão anterior?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="360.0" text="Respostas:" textFill="#510d0d">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkAcao" layoutX="182.0" layoutY="94.0" mnemonicParsing="false" text="Ação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkTerror" layoutX="281.0" layoutY="94.0" mnemonicParsing="false" text="Terror">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkRomance" layoutX="380.0" layoutY="94.0" mnemonicParsing="false" text="Romance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkComedia" layoutX="507.0" layoutY="94.0" mnemonicParsing="false" text="Comédia">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="RadioJumangi" layoutX="226.0" layoutY="212.0" mnemonicParsing="false" text="Jumangi">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="RadioButtonsVerAgora" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="RadioTitanic" layoutX="344.0" layoutY="212.0" mnemonicParsing="false" text="Titanic" toggleGroup="$RadioButtonsVerAgora">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RadioNenhum" layoutX="452.0" layoutY="212.0" mnemonicParsing="false" text="Nenhum" toggleGroup="$RadioButtonsVerAgora">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="Respostas" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="13.0" layoutY="389.0" opacity="0.96" prefHeight="73.0" prefWidth="767.0" textFill="#000000e5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" layoutX="161.0" layoutY="291.0" prefHeight="73.0" prefWidth="487.0" promptText="Digite aqui a sua opinião ;) ..." />
+   </children>
+</AnchorPane>
