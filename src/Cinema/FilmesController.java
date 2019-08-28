@@ -14,7 +14,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.ToggleGroup;
 
 
-public class FilmeController implements Initializable {
+public class FilmesController implements Initializable {
     
     private Label label;
     @FXML
